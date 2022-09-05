@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/biblioteca.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <nav>
+            <a class="menu-intro" href="intro.html">Introducir libro</a>
+            <a class="menu-biblioteca" href="php/biblioteca.php" target="_blank">Biblioteca</a>
+            <a class="menu-buscar" href="buscar.html" target="_blank">Buscar en la biblioteca</a>
+
+    </nav>
+  
+        <form action="php/conecta.php" method="POST">
+
+            <fieldset>
+                <label for="titulo">Título: </label>
+                <input type="text" name="titulo" id="tituloLibro">
+            </fieldset>
+
+            <fieldset>
+                <label for="nombre">Nombe del Autor: </label>
+                <input type="text" name="nombre" id="nombreAutor">
+            </fieldset>    
+
+            <fieldset>
+            <label for="apellidos">Apellidos del Autor: </label>
+                <input type="text" name="apellidos" id="apellidosAutor">
+            </fieldset>
+
+            <fieldset>
+                <button class="btn-submit" type="submit" name="submit" id="btn-submitLibro"> Coloca el libro en la Biblioteca</button>
+            </fieldset>
+          
+        </form>
+
+</body>
+</html>

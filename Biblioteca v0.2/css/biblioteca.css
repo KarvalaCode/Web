@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap");
+body {
+  font-family: "Amatic SC", cursive;
+  background: #d4aca0;
+  padding: 0;
+  margin: 0;
+}
+
+/*header*/
+.header {
+  display: absolute;
+  background: #49c8d2 100%;
+  color: #eb7846;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  height: 30rem;
+  /* background-image: url("../img/fotoheader.jpg");
+  background-size: cover; */
+}
+.header h1 {
+  margin: 0;
+  text-align: center;
+}
+.header h2 {
+  color: #4c3b35;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+/* Menú */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+  background-color: #9370DB;
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: #ffc300;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.menu-intro, .menu-biblioteca, .menu-buscar {
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  transition: background-color color 0.3s ease-in-out;
+}
+.menu-intro:hover, .menu-biblioteca:hover, .menu-buscar:hover {
+  background-color: #49c8d2;
+  color: #4c3b35;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media (min-width: 480px) {
+  .caja {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    background-image: url("../img/fotoheader480px.jpg");
+    background-size: cover;
+    background-position: 30%;
+  }
+}
+@media (min-width: 481px) {
+  .header {
+    background-image: url("../img/fotoheader.jpg");
+    background-size: cover;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    background-image: url("../img/fotoheader480px.jpg");
+    background-size: cover;
+    background-position: 30%;
+  }
+}
+@media (max-width: 480px) {
+  .header h1 {
+    padding: 10rem 0 0 0;
+  }
+}
