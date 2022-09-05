@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/biblioteca.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <nav>
+            <a class="menu-intro" href="indexBiblioteca.html">Introducir libro</a>
+            <a class="menu-biblioteca" href="#">Biblioteca</a>
+            <a class="menu-buscar" href="buscar.html" target="_blank">Buscar en la biblioteca</a>
+
+    </nav>
+  
+        <form action="php/conectar.php" method="POST">
+
+            <fieldset>
+                <label for="titulo">Título: </label>
+                <input type="text" name="titulo" id="tituloLibro">
+            </fieldset>
+
+            <fieldset>
+                <label for="nombre">Nombe del Autor: </label>
+                <input type="text" name="nombre" id="nombreAutor">
+            </fieldset>    
+
+            <fieldset>
+            <label for="apellidos">Apellidos del Autor: </label>
+                <input type="text" name="apellidos" id="apellidosAutor">
+            </fieldset>
+
+            <fieldset>
+                <label for="publicacion">Año de publicación: </label>
+                <input type="text" name="publicacion" id="publicacion">
+            </fieldset>
+
+            <!-- <fieldset>
+                <label for="editorial">Editorial del libro: </label>
+                <input type="text" name="editorial" id="editorialLibro">
+            </fieldset>
+
+            <fieldset>
+                <label for="estanteria">Nombre de la Estantería donde va el libro: </label>
+                <input type="text" name="estanteria" id="estanteriaLibro">
+            </fieldset>
+
+            <fieldset>
+                <label for="descripcion">Breve descripción del libro: </label>
+                <textarea name="descripcion" id="descripcionLibro" cols="75" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="dejado">¿Has dejado el libro?</label>
+                <input type="checkbox" name="dejado" id="dejadoLibro">
+            </fieldset>
+
+            <fieldset>
+                <label for="leido">¿Has dejado el libro a alguien? </label>
+                <input type="checkbox" name="leido" id="leidoLibro">
+            </fieldset> -->
+
+            <fieldset>
+                <button class="btn-submit" type="submit" name="submit" id="btn-submitLibro"> Coloca el libro en la Biblioteca</button>
+            </fieldset>
+          
+        </form>
+
+</body>
+</html>
